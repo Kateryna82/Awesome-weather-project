@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Awesome weather project</title>
+</head>
+<body>
+<div class="container">
+    <form class="Search-city">
+    <div class="col-9">
+        <input type="search" placeholder="Enter the city...">
+    </div>
+    <div class="col-3">
+        <input type="submit" value="Search">
+    </div>
+</form>
+<div class="currentWeather">
+    <div class="col-6">
+        <h1>
+            New York
+        </h1>
+        <ul>
+            <li>
+                <span class="day">Tuesday </span><span class="time">21:24, </span><span class="description">Cloudly</span>
+            </li>
+            <li>
+                Humidity: <span class="humidity">54</span>%, Wind: <span class="wind">8,5</span> km/h
+            </li>
+        </ul>
+    </div>
+    <div class="col-6">
+        <span class="icon">☁</span> <span class="temp">32</span> <span class="unit">°C</span>
+    </div>
+</div>
+<div class="WeatherForecast row">
+    <div class="col">
+        <div class="WeatherForecastPreview">
+            <div class="forecast-time">Tue</div>
+            <canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature"><span class="forecast-temperature-max">32°</span><span class="forecast-temperature-min">21°</span>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="WeatherForecastPreview">
+            <div class="forecast-time">Wed</div>
+            <canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">32°</span><span class="forecast-temperature-min">21°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Thu</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">30°</span><span class="forecast-temperature-min">23°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Fri</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">29°</span><span class="forecast-temperature-min">20°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Sat</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">28°</span><span class="forecast-temperature-min">22°</span></div></div></div></div>
+</div>
+</div>
+    <script src="src/app.js"></script>
+</body>
+</html>
