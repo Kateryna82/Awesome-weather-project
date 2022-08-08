@@ -47,7 +47,8 @@ footer {
     padding: 20px;
 }
 .info {
-    display: inline-flex;
+    display: inline-flexbox;
+    margin: 0 auto;
 }
 .row {
     display: inline-flexbox;
