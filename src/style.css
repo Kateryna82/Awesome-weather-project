@@ -21,6 +21,7 @@ footer {
     font-size: 14px;
     text-align: center;
     color: rgba(39,33,66,.4);
+    margin: 15px;
 }
 .pic {
     width: 52px;
@@ -32,14 +33,14 @@ footer {
     display:flex;
     justify-content: end;
     margin: 15px;
-    padding: 15px;
+   padding: 0;
     }
     .temp {
-        font-size: 80px;
+        font-size: 72px;
         font-weight: 600;
     }
     .unit {
-        font-size: 38px;
+        font-size: 24px;
         padding-bottom: 50px;
     }
 .box {
@@ -50,6 +51,7 @@ footer {
 }
 .row {
     display: inline-flexbox;
+    margin: 0 auto;
     width: 600px;
 }
 .container {

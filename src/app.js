@@ -45,13 +45,13 @@ function displayWeather(response) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayWeather);
   }
- 
+  
  let currentCity = document.querySelector("#search-form");
   currentCity.addEventListener("submit", newCity);
 
   function displayForecast() {
     let forecastElement = document.querySelector("#fore");
-    let days = ["Sun", "Mon", "Tue", "Wed"];
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
     let forecastHTML = `<div class = "row">`;
     days.forEach(function (day) {
     forecastHTML = forecastHTML + `
@@ -74,5 +74,6 @@ function displayWeather(response) {
     forecastElement.innerHTML = forecastHTML;
     
   }
+  
   displayForecast();
   
